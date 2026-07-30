@@ -676,24 +676,36 @@ button { font-family: inherit; border: none; background: none; cursor: none; }
     color:var(--text-secondary);
 }
 .cert-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-margin-top:50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 50px auto 0;
 }
 
 .cert-card{
-padding:28px;
-text-align:center;
-border:1px solid var(--line);
-background:var(--bg-card);
-transition:.4s;
-font-weight:600;
+    padding: 28px;
+    text-align: center;
+    border: 1px solid var(--line);
+    background: var(--bg-card);
+    transition: .4s;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .cert-card:hover{
 transform:translateY(-8px);
 border-color:var(--accent);
+}
+.cert-card .btn{
+    padding: 8px 18px;
+    font-size: 13px;
+    min-width: 120px;
 }
 
 /* ---------- 14. RESUME ---------- */
@@ -978,6 +990,16 @@ border-color:var(--accent);
 
     .navbar{
         padding:15px;
+    }
+     .section-inner{
+        width:100%;
+        padding:0 15px;
+        box-sizing:border-box;
+    }
+
+    section{
+        padding-left:15px;
+        padding-right:15px;
     }
 }
 .project-details{
