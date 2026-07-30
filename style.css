@@ -461,25 +461,29 @@ button { font-family: inherit; border: none; background: none; cursor: none; }
 
 .hero-visual { position: relative; justify-self: center; }
 .hero-frame{
-    width: 300px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 50%;
 }
+
 .hero-img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
 }
-.hero-frame-outline {
-  position: absolute;
-  top: 18px; left: 18px;
-  width: min(380px, 78vw);
-  aspect-ratio: 3 / 4;
-  border: 1px solid var(--line-strong);
-  border-radius: 4px;
-  z-index: -1;
+
+.hero-frame-outline{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 320px;
+    height: 320px;
+    border: 1px solid var(--line-strong);
+    border-radius: 50%;
+    z-index: -1;
 }
 
 .scroll-cue {
