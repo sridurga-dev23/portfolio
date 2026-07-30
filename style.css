@@ -461,29 +461,23 @@ button { font-family: inherit; border: none; background: none; cursor: none; }
 
 .hero-visual { position: relative; justify-self: center; }
 .hero-frame{
-    width: 320px;
-    height: 320px;
-    overflow: hidden;
-    border-radius: 50%;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    overflow:hidden;
 }
 
 .hero-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 50%;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
 }
 
 .hero-frame-outline{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 320px;
-    height: 320px;
-    border: 1px solid var(--line-strong);
-    border-radius: 50%;
-    z-index: -1;
+    width:260px;
+    height:260px;
+    border-radius:50%;
 }
 
 .scroll-cue {
@@ -967,6 +961,37 @@ border-color:var(--accent);
     .project-card{
         padding:25px;
     }
+    .hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-visual{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-copy{
+    order: 2;
+}
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.skill-card{
+    padding:18px;
+}
+
+.skill-card h3{
+    font-size:16px;
+}
+
+.skill-card p{
+    font-size:12px;
+}
 }
 
 @media (max-width:480px){
